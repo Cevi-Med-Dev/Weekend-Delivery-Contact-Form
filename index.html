@@ -307,7 +307,8 @@
     "https://n8n.cevispace.com/webhook-test/saturday-delivery-form",
     call_params
   ).then((data) => {
-  alert("sent")
+  deliveryForm.reset()
+  location.reload()
   });
     console.log(key, " = ", value);  
         });
