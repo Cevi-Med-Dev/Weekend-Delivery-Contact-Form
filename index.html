@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #c40c11 0%, #FFFF 100%);
+            background: linear-gradient(135deg, #c40c11 0%, #000000 100%);
             min-height: 100vh;
             padding: 20px;
             display: flex;
@@ -98,7 +98,12 @@
             color: #718096;
             font-size: 0.85em;
         }
-
+        .splitVeritcally{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .submit-btn {
             width: 100%;
             padding: 15px;
@@ -227,11 +232,34 @@
                     <label for="customerName">Customer Name <span class="required">*</span></label>
                     <input type="text" id="customerName" name="customerName" placeholder="John Doe" required>
                 </div>
-                   <div class="form-group">
-                    <label for="AAT">Approximate Arrival Time <span class="">*</span></label>
-                    <input type="AAT" id="AAT" name="AAT" placeholder="john@example.com" >
-                    <small>Approxcimate arrival time will be sent via email</small>
-                </div>
+              
+              
+
+                    <div class="form-group ">
+                        <label for="ETA">Delivery Date <span class="">*</span></label>
+                        <input type="ETA" id="ETA" name="ETA" placeholder="MM/DD/YYYY ex : 10/24/2025" >
+                        <small>Delivery Date on File</small>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="AAT">Approximate Arrival Time <span class="">*</span></label>
+                        <input type="AAT" id="AAT" name="AAT" placeholder="2:00pm - 3:00pm" >
+                        <small>Approxcimate arrival time will be sent via email</small>
+                    </div>
+                    <div class="form-group ">
+                        <label for="position">Position <span class="">*</span></label>
+                        <input type="position" id="position" name="position" placeholder="#5" >
+                        <small>Position on File</small>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="distance">Distance Away from Location <span class="">*</span></label>
+                        <input type="distance" id="distance" name="distance" placeholder="7:30 Hours" >
+                        <small>Distance away from the location</small>
+                    </div>
+
+          
+
                 <div class="form-group">
                     <label for="email">Email Address <span class="required">*</span></label>
                     <input type="email" id="email" name="email" placeholder="john@example.com" required>
